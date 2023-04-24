@@ -22,7 +22,7 @@ jobs:
         if: github.event_name == 'workflow_dispatch'
         uses: actions/checkout@v3
         with:
-          ref: ${{ github.event.ref }
+          ref: ${{ github.event.ref }}
 
       - name: checkout specific SHA if webhook providers pact URL
         uses: actions/checkout@v3
